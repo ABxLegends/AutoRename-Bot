@@ -1,4 +1,3 @@
-
 import re, os, time
 from os import environ, getenv
 id_pattern = re.compile(r'^.\d+$') 
@@ -8,7 +7,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "20366634")
     API_HASH  = os.environ.get("API_HASH", "72095ec36984aa9ceb0dbaa9cec31559")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7157937851:AAFMHlYXZXshhGdbrpOFlgqlQnI9g3-7fCE") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7647818365:AAG8NlMoBq3FtrGffqvKWZwExAshkT-Q1IM") 
 
     # database config
     DB_NAME = os.environ.get("DB_NAME","Yato")     
@@ -17,10 +16,10 @@ class Config(object):
 
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/29a3acbbab9de5f45a5fe.jpg")
+    START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/QRbv3G7/09d8b7d543b7.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7602934992').split()]
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'codeflix_bots').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002707515459") 
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'Anime_Zou').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002707515459"))
     DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002707515459"))
 
     # wes response configuration     
@@ -41,7 +40,7 @@ class Txt(object):
 ➲ ꜱᴇᴀꜱᴏɴ - ᴛᴏ ʀᴇᴘʟᴀᴄᴇ ꜱᴇᴀꜱᴏɴ ɴᴜᴍʙᴇʀ  
 ➲ ǫᴜᴀʟɪᴛʏ - ᴛᴏ ʀᴇᴘʟᴀᴄᴇ ǫᴜᴀʟɪᴛʏ  
 
-<b>‣ ꜰᴏʀ ᴇx:- </b> `/autorename Oᴠᴇʀғʟᴏᴡ [Sseason Eepisode] - [Dual] quality`
+<b>‣ ꜰᴏʀ ᴇx:- </b> `/autorename Devil May Cry [Sseason Eepisode] - [Dual] quality`
 
 <b>‣ /Autorename: ʀᴇɴᴀᴍᴇ ʏᴏᴜʀ ᴍᴇᴅɪᴀ ꜰɪʟᴇꜱ ʙʏ ɪɴᴄʟᴜᴅɪɴɢ 'ᴇᴘɪꜱᴏᴅᴇ' ᴀɴᴅ 'ǫᴜᴀʟɪᴛʏ' ᴠᴀʀɪᴀʙʟᴇꜱ ɪɴ ʏᴏᴜʀ ᴛᴇxᴛ, ᴛᴏ ᴇxᴛʀᴀᴄᴛ ᴇᴘɪꜱᴏᴅᴇ ᴀɴᴅ ǫᴜᴀʟɪᴛʏ ᴘʀᴇꜱᴇɴᴛ ɪɴ ᴛʜᴇ ᴏʀɪɢɪɴᴀʟ ꜰɪʟᴇɴᴀᴍᴇ. """
 
